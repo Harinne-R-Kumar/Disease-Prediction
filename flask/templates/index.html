@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #495057;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <h2>Enter Symptoms</h2>
+        <label for="Fever">Fever:</label>
+        <input type="text" id="Fever" name="Fever">
+        <label for="Cough">Cough:</label>
+        <input type="text" id="Cough" name="Cough">
+        <label for="Fatigue">Fatigue:</label>
+        <input type="text" id="Fatigue" name="Fatigue">
+        <label for="Difficulty Breathing">Difficulty Breathing:</label>
+        <input type="text" id="Difficulty Breathing" name="Difficulty Breathing">
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age">
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender">
+        <label for="Blood Pressure">Blood Pressure:</label>
+        <input type="text" id="Blood Pressure" name="Blood Pressure">
+        <label for="Cholesterol Level">Cholesterol Level:</label>
+        <input type="text" id="Cholesterol Level" name="Cholesterol Level">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

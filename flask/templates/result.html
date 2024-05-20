@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #007bff; /* Bootstrap primary blue color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .result-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        p {
+            color: #343a40;
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .result-container p:first-of-type {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Result</h2>
+        <p>Predicted Disease: {{ disease }}</p>
+        <p>Mean Squared Error (MSE): {{ mse }}</p>
+        <p>Accuracy: {{ accuracy }}</p>
+    </div>
+</body>
+</html>
